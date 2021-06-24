@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Deploy Github Actions
+on:
+  push:
+    branches: [main]
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Install dependencies
+        run: cd docs && yarn
+      - name: Deploy
+        run: |
+          cd docs/
+          yarn build
+          cd src/.vuepress/dist
+
+          # echo 'www.example.com' > CNAME
+
+          git init
+          git config user.email "spacemeowx2@gmail.com"
+          git config user.name "spacemeowx2"
+          git checkout -b dist
+          git add -A
+          git commit -m "deploy at `date`"
+
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} dist
