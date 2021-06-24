@@ -1,0 +1,19 @@
+{
+  "name": "rabbit-digger-docs",
+  "version": "0.0.1",
+  "description": "All-in-one proxy written in Rust.",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "https://github.com/rabbit-digger/docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
