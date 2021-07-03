@@ -13,3 +13,18 @@ features:
   details: No documentation needed, write configuration directly from code completion.
 footer: Made by spacemeowx2 with ❤️
 ---
+
+### Supported Protocol
+
+* Shadowsocks
+* Trojan
+* HTTP
+* Socks5
+* obfs(http_simple)
+
+### Supported Server Protocol
+
+* Socks5
+* HTTP
+* http+socks on the same port
+* Shadowsocks
