@@ -2,8 +2,6 @@
 
 set -e
 
-cd docs/
-
 npm run build
 
 cd src/.vuepress/dist
