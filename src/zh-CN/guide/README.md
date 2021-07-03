@@ -2,14 +2,13 @@
 sidebarDepth: 2
 ---
 
-## Introduction
+## 介绍
 
-`rabbit-digger` is a proxy software written in [Rust](https://www.rust-lang.org/).
+`rabbit-digger` 是由 [Rust](https://www.rust-lang.org/) 编写的代理软件.
 
+目前还处于快速开发阶段. 文档可能与实际用法不一致, 如果有发现不一致请 [提交issue](https://github.com/rabbit-digger/rabbit-digger.github.io/issues/new).
 
-It is still in the rapid development stage. The documentation may not be consistent with actual usage, so please [submit an issue](https://github.com/rabbit-digger/rabbit-digger.github.io/issues/new) if you find any inconsistencies.
-
-### Supported Protocol
+### 支持的代理协议
 
 * Shadowsocks
 * Trojan
@@ -17,7 +16,7 @@ It is still in the rapid development stage. The documentation may not be consist
 * Socks5
 * obfs(http_simple)
 
-### Supported Server Protocol
+### 支持的服务器协议
 
 * Socks5
 * HTTP
@@ -25,31 +24,31 @@ It is still in the rapid development stage. The documentation may not be consist
 * Shadowsocks
 
 
-## Installation
+## 安装
 
-Go to the [Release page](https://github.com/rabbit-digger/rabbit-digger-pro/releases) to download the binary file.
+前往 [Release页面](https://github.com/rabbit-digger/rabbit-digger-pro/releases) 下载二进制文件.
 
-## Common Usage
+## 常见用法
 
-### Normal mode
+### 普通模式
 
 ```
 rabbit-digger-pro -c config.example.yaml
 ```
 
-### Normal mode + Control port + Access Token
+### 普通模式 + 控制端口 + AccessToken
 
 ```
 rabbit-digger-pro -c config.example.yaml -b 127.0.0.1:8030 --access-token token
 ```
 
-### Control mode, without any config at launch
+### 纯控制模式, 默认不载入配置
 
 ```
 rabbit-digger-pro server -b 127.0.0.1:8030 --access-token token
 ```
 
-## Command line parameters
+## 命令行参数
 
 ```
 rabbit-digger-pro 0.1.0

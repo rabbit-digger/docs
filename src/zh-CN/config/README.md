@@ -2,6 +2,6 @@
 sidebar: auto
 ---
 
-# Config
+# 配置
 
 TODO...

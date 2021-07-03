@@ -3,7 +3,7 @@ home: true
 # heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline: All-in-one proxy written in Rust. 
 actionText: Quick Start →
-actionLink: /guide/
+actionLink: guide/
 features:
 - title: Hot reloading
   details: Apply changes without restart the program
@@ -13,18 +13,3 @@ features:
   details: No documentation needed, write configuration directly from code completion.
 footer: Made by spacemeowx2 with ❤️
 ---
-
-### Supported Protocol
-
-* Shadowsocks
-* Trojan
-* HTTP
-* Socks5
-* obfs(http_simple)
-
-### Supported Server Protocol
-
-* Socks5
-* HTTP
-* http+socks on the same port
-* Shadowsocks

@@ -49,7 +49,6 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'using-vue',
           ]
         }
       ],
@@ -80,15 +79,21 @@ module.exports = {
         nav: [
           {
             text: '指南',
-            link: '/guide/'
+            link: '/zh-CN/guide/'
           },
           {
             text: '配置',
-            link: '/config/'
+            link: '/zh-CN/config/'
           }
         ],
         sidebar: {
-          '/guide/': [/* ... */],
+          '/zh-CN/guide/': [{
+            title: '指南',
+            collapsable: false,
+            children: [
+              '',
+            ]
+          }],
         }
       }
     }
@@ -113,6 +118,8 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-last-updated',
+    'flowchart',
     // ['schema2md', {
     //   pages: {
     //     '/config/': {
