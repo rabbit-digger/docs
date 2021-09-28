@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Inside | Rabbit Digger Pro</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Rust编写的灵活代理软件.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f94f3034.css" as="style"><link rel="preload" href="/assets/js/app.877b83e3.js" as="script"><link rel="preload" href="/assets/js/3.04fda7a8.js" as="script"><link rel="preload" href="/assets/js/19.c0e76da1.js" as="script"><link rel="prefetch" href="/assets/js/10.b6749a19.js"><link rel="prefetch" href="/assets/js/11.758f9e0b.js"><link rel="prefetch" href="/assets/js/12.744ee856.js"><link rel="prefetch" href="/assets/js/13.59ea71f9.js"><link rel="prefetch" href="/assets/js/14.e236accb.js"><link rel="prefetch" href="/assets/js/15.b6df795d.js"><link rel="prefetch" href="/assets/js/16.aa8f55db.js"><link rel="prefetch" href="/assets/js/17.ec6abd26.js"><link rel="prefetch" href="/assets/js/18.cec55d8d.js"><link rel="prefetch" href="/assets/js/20.34395ede.js"><link rel="prefetch" href="/assets/js/4.d5fc930d.js"><link rel="prefetch" href="/assets/js/5.5839940d.js"><link rel="prefetch" href="/assets/js/6.834b3a03.js"><link rel="prefetch" href="/assets/js/7.bb6a00e0.js"><link rel="prefetch" href="/assets/js/8.15da4a15.js"><link rel="prefetch" href="/assets/js/9.a90e17e8.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.c91ff7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f94f3034.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh-CN/" class="home-link router-link-active"><!----> <span class="site-name">Rabbit Digger Pro</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh-CN/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh-CN/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-CN/inside/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh-CN/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh-CN/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-CN/inside/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Inside</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh-CN/inside/#net" class="sidebar-link">Net</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh-CN/inside/#netref" class="sidebar-link">NetRef</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh-CN/inside/#externalfile" class="sidebar-link">ExternalFile</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh-CN/inside/#config-处理流" class="sidebar-link">Config 处理流</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="inside"><a href="#inside" class="header-anchor">#</a> Inside</h1> <p><code>rabbit-digger</code> 内部的秘密🐰...</p> <h2 id="net"><a href="#net" class="header-anchor">#</a> Net</h2> <p><code>Net</code> 是 <code>rabbit-digger</code> 的核心概念. 每个代理协议都是根据一个配置(如代理服务器地址, 认证方式, 基于的 <code>Net</code>) 构造一个新的 <code>Net</code>. 这个 <code>Net</code> 提供了 <code>tcp_connect</code> 和 <code>udp_bind</code>, 对使用者隐藏了服务器的连接细节, 能够让使用者直接调用 <code>tcp_connect</code> 和 <code>udp_bind</code>.</p> <p><code>Net</code> 的实现者不应该使用异步运行时提供的 <code>TcpStream</code> 和 <code>UdpSocket</code> 来连接代理服务器. 而是应该在 <code>Config</code> 中声明 <code>NetRef</code>, 然后使用这个 <code>Net</code> 来连接代理服务器.</p> <p>因此, 每个代理协议都能够互相嵌套, 自然的实现了代理链.</p> <h2 id="netref"><a href="#netref" class="header-anchor">#</a> NetRef</h2> <p><code>NetRef</code> 是一个 <code>enum</code>, 有 <code>String</code> 和 <code>Net</code> 两种状态. 当 <code>Config</code> 从文件读入时, <code>NetRef</code> 是一个未解析的字符串. 而 <code>rabbit-digger</code> 会根据引用关系一次将 <code>NetRef</code> 解析成 <code>Net</code> 实例, 然后传给 <code>NetFactory::new</code>.</p> <h2 id="externalfile"><a href="#externalfile" class="header-anchor">#</a> ExternalFile</h2> <p><code>ExternalFile</code> 可用在 <code>Config</code> 中. 代表着这个字段是一个外部的文件. <code>ExternalFile</code> 可以是文件, 也可以是 <code>Url</code>. 当 <code>ExternalFile</code> 是文件且 <code>watch</code> 为 <code>true</code> 时, <code>Net</code> 会在文件变更时被重建. 当 <code>Url</code> 和 <code>interval</code> 被设置时, 文件会被轮询, 并且在改变时重建 <code>Net</code>.</p> <h2 id="config-处理流"><a href="#config-处理流" class="header-anchor">#</a> Config 处理流</h2> <p>所有 <code>Config</code> 类型都实现了 <code>Config</code> trait, <code>rabbit-digger</code> 会在加载 <code>Net</code> 时调用 <code>Config::visit</code> 来访问内部的字段, 并填入所有的 <code>NetRef</code>, <code>ExternalFile</code>. 在填入 <code>ExternalFile</code> 的时候会记录所有使用到的文件, 并在文件变动的时候重新构建 <code>Net</code>.</p> <div class="language-flow extra-class"><pre class="language-flow"><code>input<span class="token operator">=&gt;</span>inputoutput<span class="token operator">:</span> Config<span class="token punctuation">.</span>yaml
+mkctx<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> 创建配置上下文<span class="token punctuation">,</span> 用于保存 Config 依赖的文件
+<span class="token keyword">import</span><span class="token operator">=&gt;</span>operation<span class="token operator">:</span> 处理 Import 字段
+build<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> 构造 Net 和 Server
+cond<span class="token operator">=&gt;</span>condition<span class="token operator">:</span> 依赖的文件
+是否改变<span class="token operator">?</span>
+run_server<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> 运行 Server
+直到所有Server停止
+
+input<span class="token operator">-</span><span class="token operator">&gt;</span>mkctx<span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">import</span><span class="token operator">-</span><span class="token operator">&gt;</span>build<span class="token operator">-</span><span class="token operator">&gt;</span>run_server<span class="token operator">-</span><span class="token operator">&gt;</span>cond
+
+<span class="token function">cond</span><span class="token punctuation">(</span>yes<span class="token punctuation">,</span>left<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>mkctx
+<span class="token function">cond</span><span class="token punctuation">(</span>no<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>run_server
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2021/9/28 下午11:35:59</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.877b83e3.js" defer></script><script src="/assets/js/3.04fda7a8.js" defer></script><script src="/assets/js/19.c0e76da1.js" defer></script>
+  </body>
+</html>

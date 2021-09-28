@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | Rabbit Digger Pro</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Rust编写的灵活代理软件.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f94f3034.css" as="style"><link rel="preload" href="/assets/js/app.877b83e3.js" as="script"><link rel="preload" href="/assets/js/3.04fda7a8.js" as="script"><link rel="preload" href="/assets/js/14.e236accb.js" as="script"><link rel="prefetch" href="/assets/js/10.b6749a19.js"><link rel="prefetch" href="/assets/js/11.758f9e0b.js"><link rel="prefetch" href="/assets/js/12.744ee856.js"><link rel="prefetch" href="/assets/js/13.59ea71f9.js"><link rel="prefetch" href="/assets/js/15.b6df795d.js"><link rel="prefetch" href="/assets/js/16.aa8f55db.js"><link rel="prefetch" href="/assets/js/17.ec6abd26.js"><link rel="prefetch" href="/assets/js/18.cec55d8d.js"><link rel="prefetch" href="/assets/js/19.c0e76da1.js"><link rel="prefetch" href="/assets/js/20.34395ede.js"><link rel="prefetch" href="/assets/js/4.d5fc930d.js"><link rel="prefetch" href="/assets/js/5.5839940d.js"><link rel="prefetch" href="/assets/js/6.834b3a03.js"><link rel="prefetch" href="/assets/js/7.bb6a00e0.js"><link rel="prefetch" href="/assets/js/8.15da4a15.js"><link rel="prefetch" href="/assets/js/9.a90e17e8.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.c91ff7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f94f3034.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh-CN/" class="home-link router-link-active"><!----> <span class="site-name">Rabbit Digger Pro</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh-CN/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh-CN/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/config/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-CN/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh-CN/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh-CN/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/config/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh-CN/config/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h1> <p>Rabbit Digger 支持任意个数的 <code>server</code> 和 <code>net</code>.</p> <p><code>net</code> 代表着一种虚拟的网络. 它可以是本地网络, 也可以通过代理提供的网络. 甚至连规则也是一种 <code>net</code>.</p> <p>每个 <code>net</code> 都有它的名字和类型. <code>name</code> 就是键名, 而 <code>type</code> 代表了它的类型.
+除了 <code>local</code> 类型的 <code>net</code> 和一些特殊类型的 <code>net</code>, 其他的 <code>net</code> 一般都需要基于另一个 <code>net</code> 才能生效.</p> <p>实际上在 <code>Rabbit Digger Pro</code> 中大部分代理协议的配置都可以通过添加 <code>net</code> 字段来实现链式代理.</p> <p><code>server</code> 代表着代理服务器. 它可以是一个 <code>http</code> 服务器, 也可以是一个 <code>socks5</code> 服务器, 大多数情况下你可以使用 <code>http+socks5</code> 服务器.</p> <p>你可以在不同的端口上同时部署多种服务器.</p> <p>下图是一种典型配置的示意图:</p> <div class="spinner" style="background:rgb(66, 185, 131);" data-v-1bbcb91a></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2021/9/28 下午11:35:59</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.877b83e3.js" defer></script><script src="/assets/js/3.04fda7a8.js" defer></script><script src="/assets/js/14.e236accb.js" defer></script>
+  </body>
+</html>
