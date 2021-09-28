@@ -90,8 +90,11 @@ module.exports = {
           '/zh-CN/guide/': [{
             title: '指南',
             collapsable: false,
+            sidebarDepth: 2,
             children: [
               '',
+              'installation',
+              'usage',
             ]
           }],
         }
@@ -117,9 +120,9 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
     '@vuepress/plugin-last-updated',
-    'flowchart',
+    'vuepress-plugin-mermaidjs',
+    'vuepress-plugin-flowchart-js',
     // ['schema2md', {
     //   pages: {
     //     '/config/': {

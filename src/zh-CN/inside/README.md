@@ -26,7 +26,7 @@ sidebar: auto
 
 所有 `Config` 类型都实现了 `Config` trait, `rabbit-digger` 会在加载 `Net` 时调用 `Config::visit` 来访问内部的字段, 并填入所有的 `NetRef`, `ExternalFile`. 在填入 `ExternalFile` 的时候会记录所有使用到的文件, 并在文件变动的时候重新构建 `Net`.
 
-@flowstart
+```flow
 input=>inputoutput: Config.yaml
 mkctx=>operation: 创建配置上下文, 用于保存 Config 依赖的文件
 import=>operation: 处理 Import 字段
@@ -41,4 +41,4 @@ input->mkctx->import->build->run_server->cond
 cond(yes,left)->mkctx
 cond(no)->run_server
 
-@flowend
+```
